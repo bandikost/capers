@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.table {
+  height: auto;
+  margin: 0 auto 0;
+}
+
+.cell {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 300px;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cell p {
+  padding: 0 20px;
+}
+
+.button {
+  display: block;
+  width: 120px;
+  position: relative;
+  z-index: 10;
+  left: -140%;
+  margin-top: -60px;
+  height: 50px;
+  opacity: 0;
+}
+
+.container {
+  display: flex;
+    margin: 0 auto 0;
+    flex-direction: column;
+}
+
+.table .cell:before {
+  content: attr(data-number) ". "; 
+}
+
+
+.table .cell:before {
+  color: goldenrod; 
+}
+.table .cell:nth-child(2):before {
+  color: green; 
+}
+.table .cell:nth-child(3):before {
+  color: blue; 
+}
